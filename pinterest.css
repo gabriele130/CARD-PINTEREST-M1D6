@@ -1,0 +1,69 @@
+#card-container {
+    display: flex;
+    justify-content: center;
+}
+
+#card {background-image:  url(america.png.gif.jpg);
+    width: 200px;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10%;
+    overflow: hidden;
+}
+
+#card-overlay {
+    width: 100%;
+    height: 100%;
+    background: #00000069;
+    opacity: 0;
+    transition: opacity ease 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: auto;
+}
+
+#card:hover #card-overlay {
+    opacity: 1;
+}
+
+#buttom-top {
+    display: flex;
+    align-self:flex-end;
+    padding: 5px;
+}
+
+#button-bottom {
+    display: flex;
+   justify-content: space-around;
+}
+
+#buttom-top > button {
+    position: relative;
+    bottom: 15px;
+    transition:bottom 1.5s;
+    border-radius: 25px;
+    background: red;
+    border: none;
+    color: whitesmoke;
+}
+
+#card:hover #buttom-top > button {
+    bottom:0;
+}
+
+
+#button-bottom>button {
+    position: relative;
+    bottom: -30px;
+    transition: 1s;
+    background: indianred;
+    border: none;
+    color: whitesmoke;
+    border-radius: 25px;
+}
+
+#card:hover #button-bottom>button {
+   bottom : 0;
+}
